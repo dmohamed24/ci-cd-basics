@@ -10,9 +10,9 @@ describe('Default Endpoint', () => {
 
 describe('New Endpoint', () => {
   it('should return a static json response with status 201', async () => {
-    const res = await request(app).get('/ice-flakes')
+    const res = await request(app).get('/ice-flake')
     expect(res.body).toEqual({
-      resource: 'ice-flakes',
+      resource: 'ice-flake',
       count: 1005,
       shape: 'circle'
     })
